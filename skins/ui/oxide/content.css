@@ -241,7 +241,7 @@ pre[class*="language-"] {
   border: 1px dashed #aaa;
 }
 .mce-pagebreak {
-  border: 1px dashed #aaa;
+  border-top: 1px dashed #aaa;
   cursor: default;
   display: block;
   height: 5px;

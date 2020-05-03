@@ -14,7 +14,8 @@
     var global$1 = tinymce.util.Tools.resolve('tinymce.Env');
 
     var getSeparatorHtml = function (editor) {
-      return editor.getParam('pagebreak_separator', '<!-- pagebreak -->');
+      // return editor.getParam('pagebreak_separator', '<!-- pagebreak -->');
+      return editor.getParam('pagebreak_separator', '<!--nextpage-->');
     };
     var shouldSplitBlock = function (editor) {
       return editor.getParam('pagebreak_split_block', false);
@@ -29,6 +30,7 @@
     };
     var getPlaceholderHtml = function () {
       return '<img src="' + global$1.transparentSrc + '" class="' + getPageBreakClass() + '" data-mce-resize="false" data-mce-placeholder />';
+      // return '<img src="' + 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' + '" class="' + getPageBreakClass() + '" data-mce-resize="false" data-mce-placeholder />';
     };
     var setup = function (editor) {
       var separatorHtml = Settings.getSeparatorHtml(editor);
