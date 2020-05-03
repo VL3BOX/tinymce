@@ -76,7 +76,7 @@ tinymce.addI18n('zh_CN',{
 "Restore last draft": "\u6062\u590d\u4e0a\u6b21\u7684\u8349\u7a3f",
 "Special character...": "\u7279\u6b8a\u5b57\u7b26...",
 "Source code": "\u6e90\u4ee3\u7801",
-"Insert\/Edit code sample": "\u63d2\u5165\/\u7f16\u8f91\u4ee3\u7801\u793a\u4f8b",
+"Insert\/Edit code sample": "插入/编辑代码",
 "Language": "\u8bed\u8a00",
 "Code sample...": "\u793a\u4f8b\u4ee3\u7801...",
 "Color Picker": "\u9009\u8272\u5668",
@@ -415,5 +415,6 @@ tinymce.addI18n('zh_CN',{
 "Whole words": "\u5168\u5b57\u5339\u914d",
 "Spellcheck": "\u62fc\u5199\u68c0\u67e5",
 "Caption": "\u6807\u9898",
-"Insert template": "\u63d2\u5165\u6a21\u677f"
+"Insert template": "\u63d2\u5165\u6a21\u677f",
+"Alternative description":'图片描述'
 });

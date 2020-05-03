@@ -2882,3 +2882,14 @@ body.tox-dialog__disable-scroll {
 .tox .tox-image-tools__sidebar {
   height: 60px;
 }
+
+/* JX3BOX */
+.tox-toolbar * {
+  cursor: pointer !important;
+}
+.tox-notifications-container{
+  width:100%;
+  top:64px;
+  position:fixed;
+  z-index:498;
+}
