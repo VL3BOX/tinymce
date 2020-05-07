@@ -1,5 +1,8 @@
 # TinyMCE
-`<script src="https://cdn.jsdelivr.net/gh/JX3BOX/tinymce@0.1.2/tinymce.min.js"></script>`
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/JX3BOX/tinymce@0.1.2/tinymce.min.js"></script>
+```
 
 + 基于tinymce v5.2.2扩展
 + 保留v4版本分割线规则
