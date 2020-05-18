@@ -11,6 +11,8 @@
 + 增加插入B站视频插件
 + 增加插入折叠文本插件
 
-## Todo
-1. iframe白名单过滤
-2. 剑三定制功能
+
+## 插件添加步骤
+1. icons/custom/icons.js 添加svg图标
+2. plugins目录，复制videox目录作为参考新建插件目录
+3. 替换videox为新插件名
