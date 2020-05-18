@@ -5,6 +5,9 @@
 <script src="https://console.cnyixun.com/static/tinymce/tinymce.min.js?v=xx"></script>
 ```
 
+需手动更新cdn
+npm run build更新css
+
 + 基于tinymce v5.2.2扩展
 + 保留v4版本分割线规则
 + 内置powerpaste&&checklist插件

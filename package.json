@@ -10,7 +10,9 @@
         "less": "^3.11.1"
     },
     "scripts": {
-        "build": "npx lessc ./skins/content/default/content.less ./skins/content/default/content.min.css"
+        "article": "npm --registry https://registry.npmjs.org install @jx3box/jx3box-article-ui@latest",
+        "less": "npx lessc ./skins/content/default/content.less ./skins/content/default/content.min.css",
+        "build": "npm run article && npm run less"
     },
     "repository": {
         "type": "git",
