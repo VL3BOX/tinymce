@@ -2893,3 +2893,7 @@ body.tox-dialog__disable-scroll {
   position:fixed;
   z-index:498;
 }
+button[title="Mathjax"] .tox-tbtn__select-label{
+  font-weight: 600;
+  font-size: 18px;
+}

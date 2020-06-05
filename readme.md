@@ -1,18 +1,23 @@
 # TinyMCE
 
+## 引用
 ```html
 <script src="https://cdn.jsdelivr.net/gh/JX3BOX/tinymce@0.1.2/tinymce.min.js"></script>
 <script src="https://console.cnyixun.com/static/tinymce/tinymce.min.js?v=xx"></script>
 ```
 
-需手动更新cdn
+## 构建
+如使用oss域名，需手动更新cdn
 npm run build更新css
 
+
+## 特性
 + 基于tinymce v5.2.2扩展
 + 保留v4版本分割线规则
 + 内置powerpaste&&checklist插件
 + 增加插入B站视频插件
 + 增加插入折叠文本插件
++ 增加mathjax支持latex - 2020/06/05
 
 
 ## 插件添加步骤
