@@ -20,3 +20,6 @@ button[title="数学公式"] .tox-tbtn__select-label{
     font-weight: 600;
     font-size: 18px;
 }
+.tox-form__group .tox-label{
+    margin-bottom:10px;
+}
