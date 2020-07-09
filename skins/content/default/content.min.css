@@ -123,27 +123,6 @@
   -moz-osx-font-smoothing: grayscale;
   cursor: pointer;
 }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, "Microsoft YaHei", Trebuchet MS, Calibri, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, sans-serif;
-  text-rendering: optimizelegibility;
-}
-a {
-  text-decoration: none;
-}
-hr {
-  margin-top: 22px;
-  margin-bottom: 22px;
-  border: 0;
-  border-top: 1px solid #eee;
-}
-svg {
-  outline: none;
-}
-textarea {
-  font-family: inherit;
-}
 .c-article {
   font-size: 1em;
   line-height: 1.8;
@@ -155,8 +134,17 @@ textarea {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, "Microsoft YaHei", Trebuchet MS, Calibri, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, sans-serif;
   text-rendering: optimizelegibility;
 }
+.c-article * {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 .c-article-editor {
   margin: 8px;
+}
+@media print {
+  .c-article {
+    -webkit-print-color-adjust: exact;
+  }
 }
 /* 链接 */
 .c-article a {
@@ -245,6 +233,7 @@ textarea {
 .c-article table {
   border-collapse: collapse;
   width: 100%;
+  height: auto;
   margin: 10px 0;
   overflow-x: auto;
   max-width: 100%;
@@ -265,9 +254,19 @@ textarea {
   background-color: #fafbfc;
   font-weight: 600;
 }
+@media screen and (max-width: 720px) {
+  .c-article table {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+@media print {
+  table {
+    page-break-inside: avoid !important;
+  }
+}
 .c-article img {
   height: auto;
-  max-width: 100%;
   padding: 5px;
   border: 1px solid #eee;
   margin: 5px;
@@ -332,7 +331,6 @@ textarea {
 .c-article code {
   font-family: Consolas, monospace, serif;
   color: #dd0055;
-  white-space: nowrap;
   padding: 2px 4px;
   border: 1px solid #dddddd;
   border-radius: 3px;
@@ -470,6 +468,9 @@ textarea {
   display: block;
   margin-bottom: 0;
   border-radius: 4px;
+  line-height: 1.6;
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
 .c-article .e-summary:before {
   content: ">";
@@ -533,6 +534,13 @@ textarea {
   width: auto;
   height: auto;
 }
+@media screen and (max-width: 1024px) {
+  .c-article video,
+  .c-article iframe {
+    height: auto;
+    min-height: 200px;
+  }
+}
 .c-article-directory h1,
 .c-article-directory h2,
 .c-article-directory h3 {
@@ -554,8 +562,11 @@ textarea {
 .c-article-directory h3:hover {
   color: #0366d6;
 }
+.c-article-directory a {
+  color: #3d454d;
+}
 .c-article-directory h1 {
-  font-size: 16px;
+  font-size: 15px;
 }
 .c-article-directory h2 {
   font-size: 14px;
@@ -595,6 +606,10 @@ textarea {
 .c-article-directory-title .c-article-directory-title-label {
   font-weight: 300;
   font-size: 20px;
+  cursor: pointer;
+}
+.c-article-directory-title .c-article-directory-title-label:hover {
+  color: #f39;
 }
 .c-article-directory-title .c-article-directory-title-skip {
   font-size: 14px;
@@ -606,6 +621,9 @@ textarea {
 }
 .c-article-directory-title .c-article-directory-title-skip:hover {
   color: #a1a9bb;
+}
+.c-article-directory-content {
+  padding: 10px 15px;
 }
 @keyframes focusFade {
   from {
@@ -659,6 +677,8 @@ textarea {
   padding: 0 8px;
 }
 .w-jx3macro {
+  font-size: 15px;
+  line-height: 24px;
   font-family: Monaco, Consolas, 'Lucida Console', 'Courier New', serif;
 }
 .w-jx3macro ol {
@@ -687,6 +707,20 @@ textarea {
   margin: 0;
   line-height: 24px;
   border: none !important;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  white-space: normal;
+}
+@media print {
+  .w-jx3macro {
+    page-break-inside: avoid !important;
+  }
+  .w-jx3macro ol {
+    padding-left: 0;
+  }
+  .w-jx3macro li {
+    list-style: none;
+    border-left: none;
+  }
 }
 .jx3macro-comment {
   color: #22863a;
@@ -732,6 +766,12 @@ textarea {
   padding: 2px 8px;
   line-height: 21px;
 }
+.c-article .e-jx3qixue-area {
+  display: none;
+}
+.c-article-editor .e-jx3qixue-area {
+  display: block;
+}
 .w-qixue-box {
   zoom: 1;
   display: inline-block;
@@ -742,7 +782,7 @@ textarea {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-right: 20px;
+  padding-right: 10px;
   white-space: nowrap;
   font-size: 0;
   position: relative;
@@ -893,7 +933,7 @@ textarea {
 }
 .w-qixue-box .w-qixue-olist {
   position: relative;
-  z-index: 3;
+  z-index: 550;
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -952,6 +992,7 @@ textarea {
   border-radius: 3px;
   padding: 10px;
   width: 320px;
+  max-width: none;
 }
 .w-qixue-box .w-qixue-item-pop * {
   display: block;
@@ -981,6 +1022,7 @@ textarea {
   color: #ff9600;
   font-size: 13px;
   line-height: 2;
+  font-style: normal;
 }
 .w-qixue-box .w-qixue-item-pop.on {
   display: block;
@@ -993,8 +1035,14 @@ textarea {
 }
 @media screen and (max-width: 1024px) {
   .w-qixue-box {
+    *zoom: 1;
     display: block;
     width: auto;
+  }
+  .w-qixue-box:after {
+    content: "";
+    display: table;
+    clear: both;
   }
   .w-qixue-box li,
   .w-qixue-box .w-qixue-xf {
@@ -1005,6 +1053,19 @@ textarea {
   .w-qixue-box .w-qixue-xf {
     display: none;
   }
+  .w-qixue-box .w-qixue-clist {
+    display: block;
+    *zoom: 1;
+    margin-top: 0;
+  }
+  .w-qixue-box .w-qixue-clist:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.w-qixue-editable .w-qixue-xf {
+  margin-top: 5px;
 }
 .w-qixue-editable li {
   cursor: pointer;
@@ -1034,9 +1095,8 @@ textarea {
 }
 @media screen and (max-width: 1024px) {
   .w-qixue-editable {
-    zoom: 0.8;
     display: block;
-    width: 100%;
+    width: auto;
   }
   .w-qixue-editable li,
   .w-qixue-editable .w-qixue-xf {
@@ -1072,6 +1132,17 @@ textarea {
     bottom: 100%;
   }
 }
+@media print {
+  .w-qixue-box {
+    page-break-inside: avoid !important;
+    padding-right: 40px;
+  }
+  .w-qixue-box .w-qixue-clist-item {
+    padding-left: 5px;
+    padding-right: 0;
+    transform: scale(0.85);
+  }
+}
 .c-article .e-jx3-icon {
   padding: 0;
   width: 48px;
@@ -1091,6 +1162,8 @@ textarea {
   box-sizing: border-box;
   position: relative;
   white-space: normal;
+  font-family: -apple-system, "Microsoft YaHei", Trebuchet MS, Calibri, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, sans-serif;
+  text-rendering: optimizelegibility;
 }
 .c-article .e-jx3-resource:after {
   content: "";
@@ -1117,7 +1190,14 @@ textarea {
   font-weight: bold;
   display: block;
 }
-.c-article .e-jx3-resource .u-desc {
+.c-article .e-jx3-resource .u-name em {
+  font-style: normal;
+  font-weight: normal;
+  color: #999;
+  font-size: 12px;
+}
+.c-article .e-jx3-resource .u-desc,
+.c-article .e-jx3-resource .u-content {
   font-size: 12px;
   display: block;
   white-space: pre-wrap;
@@ -1131,6 +1211,14 @@ textarea {
 }
 .c-article .e-jx3-resource .u-remark {
   display: none;
+}
+.c-article .e-jx3-resource .u-primary {
+  display: block;
+}
+@media print {
+  .e-jx3-resource {
+    page-break-inside: avoid !important;
+  }
 }
 .c-article-editor .mce-pagebreak {
   padding: 0;
@@ -1147,7 +1235,7 @@ textarea {
   display: block;
 }
 .c-article-all {
-  width: 40%;
+  width: 100%;
   margin: 10px auto !important;
   display: block !important;
 }
@@ -1155,4 +1243,28 @@ textarea {
   margin: 10px;
   max-width: 100%;
   overflow-x: auto;
+  text-align: center;
+}
+.c-article .e-print-pagebreak {
+  display: none;
+}
+.c-article-editor .e-print-pagebreak {
+  display: block;
+  border-bottom: 1px dotted #eee;
+  font-size: 0;
+}
+.c-article-editor .e-print-pagebreak:after {
+  content: "🖨 打印分页占位符";
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+@media print {
+  .c-article .e-print-pagebreak {
+    page-break-after: always;
+  }
+}
+.pswp__bg {
+  background: rgba(0, 0, 0, 0.8);
 }

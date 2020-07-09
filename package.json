@@ -4,9 +4,11 @@
     "description": "基于tinymce 5.2.2扩展JX3BOX专用",
     "main": "tinymce.js",
     "dependencies": {
+        "@jx3box/jx3box-common": "^5.0.2",
         "@jx3box/jx3box-editor": "0.0.1"
     },
     "devDependencies": {
+        "csslab": "^4.0.3",
         "less": "^3.11.1"
     },
     "scripts": {
