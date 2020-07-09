@@ -399,7 +399,7 @@ tinymce.addI18n('zh_CN',{
 "Version": "\u7248\u672c",
 "Anchor": "\u951a\u70b9",
 "Special character": "\u7279\u6b8a\u7b26\u53f7",
-"Code sample": "\u4ee3\u7801\u793a\u4f8b",
+"Code sample": "语法高亮",
 "Color": "\u989c\u8272",
 "Emoticons": "\u8868\u60c5",
 "Document properties": "\u6587\u6863\u5c5e\u6027",
