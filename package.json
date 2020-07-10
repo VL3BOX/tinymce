@@ -4,17 +4,16 @@
     "description": "基于tinymce 5.2.2扩展JX3BOX专用",
     "main": "tinymce.js",
     "dependencies": {
-        "@jx3box/jx3box-common": "^5.0.2",
-        "@jx3box/jx3box-editor": "0.0.2"
+        "@jx3box/jx3box-common": "^5.0.4",
+        "@jx3box/jx3box-editor": "0.0.5"
     },
     "devDependencies": {
         "csslab": "^4.0.3",
         "less": "^3.11.1"
     },
     "scripts": {
-        "article": "npm --registry https://registry.npmjs.org install @jx3box/jx3box-editor@latest",
-        "less": "npx lessc ./skins/content/default/content.less ./skins/content/default/content.min.css",
-        "build": "npm run article && npm run less"
+        "update": "npm --registry https://registry.npmjs.org install @jx3box/jx3box-common@latest @jx3box/jx3box-editor",
+        "build": "npx lessc ./skins/content/default/content.less ./skins/content/default/content.min.css"
     },
     "repository": {
         "type": "git",
