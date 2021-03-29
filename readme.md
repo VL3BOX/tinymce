@@ -30,4 +30,5 @@ npm run build更新css
 ```
 npm run update
 npm run build
+CDN https://oss.jx3box.com/static/tinymce/skins/content/default/content.min.css
 ```
