@@ -926,27 +926,14 @@
   margin-right: 5px;
   font-size: 16px;
 }
-.c-article-directory .hasChild {
-  font-size: 14px;
+.c-article-directory .lv2 {
+  padding-left: 20px;
 }
-.c-article-directory .hasChild::before {
-  content: "\e784";
+.c-article-directory .lv3 {
+  padding-left: 40px;
 }
-.c-article-directory h2,
-.c-article-directory h3,
-.c-article-directory h4,
-.c-article-directory h5,
-.c-article-directory h6 {
-  margin-left: 20px;
-}
-.c-article-directory .hasChild {
-  margin-left: 0;
-}
-.c-article-directory h3 + h2,
-.c-article-directory h4 + h3,
-.c-article-directory h5 + h4,
-.c-article-directory h6 + h5 {
-  margin-left: 0;
+.c-article-directory .lv0 {
+  display: none;
 }
 .c-article-directory-title {
   margin-bottom: 5px;
@@ -1180,7 +1167,7 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .c-article .w-latex:after {
-  content: 'JX3BOX·Latex';
+  content: 'JX3BOX·Katex';
   position: absolute;
   right: 0;
   top: -30px;
@@ -1192,6 +1179,7 @@
   height: 28px;
   box-sizing: border-box;
   font-size: 14px;
+  font-family: consolas;
 }
 .c-article-editor .e-latex-area {
   min-height: 24px;
@@ -1215,4 +1203,5 @@
   color: #fff;
   border-radius: 3px;
   padding: 0 8px;
+  font-family: consolas;
 }

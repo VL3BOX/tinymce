@@ -5,7 +5,7 @@
     "main": "tinymce.js",
     "dependencies": {
         "@jx3box/jx3box-common": "^6.3.0",
-        "@jx3box/jx3box-editor": "^0.5.3"
+        "@jx3box/jx3box-editor": "^0.5.5"
     },
     "devDependencies": {
         "csslab": "^4.0.3",
