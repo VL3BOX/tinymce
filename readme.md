@@ -26,7 +26,7 @@ npm run build更新css
 3. 替换videox为新插件名
 4. 编辑器配置中激活插件和工具栏
 
-## 样式
+## 更新样式
 ```
 npm run update
 npm run build

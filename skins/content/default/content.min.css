@@ -415,6 +415,12 @@
   border: 1px solid #eee;
   margin: 5px;
 }
+.c-article .t-emotion {
+  padding: 0 1px;
+  border: none;
+  margin: 0;
+  vertical-align: -3px;
+}
 .c-article .e-jx3-item {
   cursor: pointer;
 }
