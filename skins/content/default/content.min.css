@@ -1112,6 +1112,11 @@
   position: absolute;
   right: 5px;
   top: 5px;
+  text-align: right;
+}
+.c-article .e-jx3-resource .u-detach {
+  margin-top: 4px;
+  display: block;
 }
 .c-article .e-jx3-resource .u-remark {
   display: none;
