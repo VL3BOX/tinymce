@@ -1,6 +1,6 @@
 {
     "name": "@jx3box/tinymce",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "基于tinymce 5.2.2扩展JX3BOX专用",
     "main": "tinymce.js",
     "dependencies": {
