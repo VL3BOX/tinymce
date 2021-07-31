@@ -1015,7 +1015,8 @@
   border-radius: 3px;
   padding: 0 8px;
 }
-.e-jx3qixue-area {
+.e-jx3qixue-area,
+.e-jx3talent2-area {
   min-height: 24px;
   border-radius: 4px;
   font-size: 14px;
@@ -1030,7 +1031,8 @@
   position: relative;
   *zoom: 1;
 }
-.e-jx3qixue-area:after {
+.e-jx3qixue-area:after,
+.e-jx3talent2-area:after {
   content: "JX3BOX·TALENT";
   position: absolute;
   right: 8px;
@@ -1041,10 +1043,12 @@
   padding: 2px 8px;
   line-height: 21px;
 }
-.c-article .e-jx3qixue-area {
+.c-article .e-jx3qixue-area,
+.c-article .e-jx3talent2-area {
   display: none;
 }
-.c-article-editor .e-jx3qixue-area {
+.c-article-editor .e-jx3qixue-area,
+.c-article-editor .e-jx3talent2-area {
   display: block;
 }
 .c-article .e-jx3-icon {
