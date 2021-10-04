@@ -607,10 +607,6 @@
 .c-item .c-item-wrapper .u-furniture-can span {
   padding-right: 10px;
 }
-.c-item-pop {
-  position: fixed;
-  z-index: 2000;
-}
 .c-article p,
 .c-article div {
   margin: 0;
@@ -1219,4 +1215,117 @@
   border-radius: 3px;
   padding: 0 8px;
   font-family: consolas;
+}
+.hevue-imgpreview-wrap .he-img-wrap {
+  background: rgba(0, 0, 0, 0.8);
+}
+.hevue-imgpreview-wrap .arrow,
+.hevue-imgpreview-wrap .he-close-icon {
+  display: block!important;
+  text-align: center!important;
+}
+.hevue-imgpreview-wrap .he-close-icon:hover {
+  transform: scale(1.2);
+}
+.w-jx3-element-pop {
+  position: fixed;
+  z-index: 2000;
+}
+.w-buff {
+  padding: 1px;
+  border: 1px solid #0f2222;
+}
+.w-buff .w-buff-wrapper {
+  max-width: 345px;
+  min-width: 200px;
+  padding: 9px 10px 10px;
+  background-color: rgba(15, 34, 34, 0.88);
+  box-sizing: border-box;
+  display: flex;
+}
+.w-buff .w-buff-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+.w-buff .w-buff-content {
+  font-weight: normal;
+  flex-grow: 1;
+  text-shadow: 1px 1px 1px #0f2222;
+}
+.w-buff .w-buff-name {
+  color: #ff0;
+  display: block;
+  font-size: 13px;
+}
+.w-buff .w-buff-desc {
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.w-buff .w-buff-meta {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  color: #f00;
+}
+.c-article .e-jx3-buff {
+  text-decoration: underline;
+}
+.c-article .e-jx3-buff.isBuff {
+  color: #37a900;
+}
+.c-article .e-jx3-buff.isDebuff {
+  color: #900;
+}
+.c-article .e-jx3-buff:hover {
+  box-shadow: none !important;
+}
+.w-skill {
+  padding: 1px;
+  border: 1px solid #0f2222;
+}
+.w-skill .w-skill-wrapper {
+  max-width: 345px;
+  min-width: 200px;
+  padding: 9px 10px 10px;
+  background-color: rgba(15, 34, 34, 0.88);
+  box-sizing: border-box;
+  display: flex;
+}
+.w-skill .w-skill-icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+.w-skill .w-skill-content {
+  font-weight: normal;
+  flex-grow: 1;
+  text-shadow: 1px 1px 1px #0f2222;
+}
+.w-skill .w-skill-name {
+  color: #ff0;
+  display: block;
+  font-size: 13px;
+}
+.w-skill .w-skill-desc {
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.w-skill .w-skill-meta {
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+  color: #f00;
+}
+.c-article .e-jx3-skill {
+  text-decoration: underline;
+}
+.c-article .e-jx3-skill:hover {
+  box-shadow: none !important;
 }
