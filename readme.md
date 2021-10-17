@@ -22,9 +22,9 @@ npm run build更新css
 
 ## 插件添加步骤
 1. icons/custom/icons.js 添加svg图标,需设置尺寸,注意视口大小,移除换行符等
-2. plugins目录，复制videox(input),foldtext(null)目录作为参考新建插件目录
-3. 替换videox为新插件名
-4. 编辑器配置中激活插件和工具栏
+2. plugins目录，复制videox(input),foldtext(null)目录作为参考新建插件目录，替换videox为新插件名
+3. 更新cdn：https://oss.jx3box.com/static/tinymce/tinymce.min.js
+4. 编辑器配置中激活插件和添加工具栏项
 
 ## 更新样式
 ```
