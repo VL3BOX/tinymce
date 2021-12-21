@@ -1,6 +1,6 @@
 {
     "name": "@jx3box/tinymce",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "基于tinymce 5.2.2扩展JX3BOX专用",
     "main": "tinymce.js",
     "dependencies": {
@@ -14,7 +14,8 @@
     "scripts": {
         "update": "npm --registry https://registry.npmjs.org install @jx3box/jx3box-common@latest @jx3box/jx3box-editor@latest",
         "build": "npx lessc ./skins/content/default/content.less ./skins/content/default/content.min.css",
-        "serve" : "serve"
+        "serve" : "serve",
+        "dev" : "serve"
     },
     "repository": {
         "type": "git",
