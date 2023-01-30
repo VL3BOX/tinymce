@@ -1094,6 +1094,10 @@
   width: auto;
   height: auto;
 }
+.c-article-editor .w-player-bilibili {
+  width: 400px;
+  height: 300px;
+}
 @media screen and (max-width: 1133px) {
   .c-article video,
   .c-article-videox iframe {
