@@ -1,138 +1,3 @@
-.i-school-null {
-  background-image: url("https://img.jx3box.com/image/school/null.png");
-}
-.i-school-tc {
-  background-image: url("https://img.jx3box.com/image/school/1.png");
-}
-.i-school-wh {
-  background-image: url("https://img.jx3box.com/image/school/2.png");
-}
-.i-school-cy {
-  background-image: url("https://img.jx3box.com/image/school/3.png");
-}
-.i-school-qx {
-  background-image: url("https://img.jx3box.com/image/school/4.png");
-}
-.i-school-hs {
-  background-image: url("https://img.jx3box.com/image/school/5.png");
-}
-.i-school-cj {
-  background-image: url("https://img.jx3box.com/image/school/6.png");
-}
-.i-school-gb {
-  background-image: url("https://img.jx3box.com/image/school/7.png");
-}
-.i-school-mj {
-  background-image: url("https://img.jx3box.com/image/school/8.png");
-}
-.i-school-wd {
-  background-image: url("https://img.jx3box.com/image/school/9.png");
-}
-.i-school-tl {
-  background-image: url("https://img.jx3box.com/image/school/10.png");
-}
-.i-school-cangyun {
-  background-image: url("https://img.jx3box.com/image/school/18.png");
-}
-.i-school-cg {
-  background-image: url("https://img.jx3box.com/image/school/19.png");
-}
-.i-school-bd {
-  background-image: url("https://img.jx3box.com/image/school/20.png");
-}
-.i-school-pl {
-  background-image: url("https://img.jx3box.com/image/school/21.png");
-}
-.i-school-lx {
-  background-image: url("https://img.jx3box.com/image/school/22.png");
-}
-.i-school-ytz {
-  background-image: url("https://img.jx3box.com/image/school/23.png");
-}
-.i-xf-null {
-  background-image: url("https://img.jx3box.com/image/xf/0.png");
-}
-.i-xf-xs {
-  background-image: url("https://img.jx3box.com/image/xf/10002.png");
-}
-.i-xf-yj {
-  background-image: url("https://img.jx3box.com/image/xf/10003.png");
-}
-.i-xf-qc {
-  background-image: url("https://img.jx3box.com/image/xf/10014.png");
-}
-.i-xf-jc {
-  background-image: url("https://img.jx3box.com/image/xf/10015.png");
-}
-.i-xf-hj {
-  background-image: url("https://img.jx3box.com/image/xf/10021.png");
-}
-.i-xf-ax {
-  background-image: url("https://img.jx3box.com/image/xf/10026.png");
-}
-.i-xf-lj {
-  background-image: url("https://img.jx3box.com/image/xf/10028.png");
-}
-.i-xf-tct {
-  background-image: url("https://img.jx3box.com/image/xf/10062.png");
-}
-.i-xf-ys {
-  background-image: url("https://img.jx3box.com/image/xf/10080.png");
-}
-.i-xf-bx {
-  background-image: url("https://img.jx3box.com/image/xf/10081.png");
-}
-.i-xf-ws {
-  background-image: url("https://img.jx3box.com/image/xf/10144.png");
-}
-.i-xf-sj {
-  background-image: url("https://img.jx3box.com/image/xf/10145.png");
-}
-.i-xf-dj {
-  background-image: url("https://img.jx3box.com/image/xf/10175.png");
-}
-.i-xf-bt {
-  background-image: url("https://img.jx3box.com/image/xf/10176.png");
-}
-.i-xf-jy {
-  background-image: url("https://img.jx3box.com/image/xf/10224.png");
-}
-.i-xf-tl {
-  background-image: url("https://img.jx3box.com/image/xf/10225.png");
-}
-.i-xf-fy {
-  background-image: url("https://img.jx3box.com/image/xf/10242.png");
-}
-.i-xf-mz {
-  background-image: url("https://img.jx3box.com/image/xf/10243.png");
-}
-.i-xf-gb {
-  background-image: url("https://img.jx3box.com/image/xf/10268.png");
-}
-.i-xf-cyt {
-  background-image: url("https://img.jx3box.com/image/xf/10389.png");
-}
-.i-xf-cangyun {
-  background-image: url("https://img.jx3box.com/image/xf/10390.png");
-}
-.i-xf-mw {
-  background-image: url("https://img.jx3box.com/image/xf/10447.png");
-}
-.i-xf-xz {
-  background-image: url("https://img.jx3box.com/image/xf/10448.png");
-}
-.i-xf-bd {
-  background-image: url("https://img.jx3box.com/image/xf/10464.png");
-}
-.i-xf-pl {
-  background-image: url("https://img.jx3box.com/image/xf/10533.png");
-}
-.i-xf-lx {
-  background-image: url("https://img.jx3box.com/image/xf/10585.png");
-}
-.i-xf-yt {
-  background-image: url("https://img.jx3box.com/image/xf/10615.png");
-}
 /*
  * Base.less
  * Author: iRuxu
@@ -291,6 +156,12 @@
 }
 .c-article-tinymce a:hover {
   box-shadow: 0 1px 0 #0366d6;
+}
+.c-article-tinymce .e-jx3-author {
+  color: #8250df;
+}
+.c-article-tinymce .e-jx3-author:hover {
+  box-shadow: 0 1px 0 #8250df;
 }
 /* 列表 */
 .c-article-tinymce {
@@ -1091,7 +962,7 @@
   bottom: 100%;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1133px) {
   .w-qixue-box {
     *zoom: 1;
     display: block;
@@ -1151,7 +1022,7 @@
 .w-qixue-editable .w-qixue-clist-item .w-qixue-item-pop {
   display: none !important;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1133px) {
   .w-qixue-editable {
     display: block;
     width: auto;
@@ -1223,7 +1094,7 @@
   width: auto;
   height: auto;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1133px) {
   .c-article video,
   .c-article-videox iframe {
     height: auto;
@@ -1440,6 +1311,16 @@
   box-shadow: 0 0 1px inset rgba(0, 0, 0, 0.2);
   vertical-align: middle;
 }
+.c-article .e-jx3-emotion {
+  max-width: 320px;
+  vertical-align: middle;
+}
+.c-article .e-jx3-emotion:hover {
+  box-shadow: none !important;
+}
+.c-article .e-jx3-emotion .e-jx3-emotion-img {
+  border: none !important;
+}
 .c-article .e-jx3-resource {
   display: block;
   *zoom: 1;
@@ -1533,7 +1414,9 @@
 .w-buff .w-buff-icon {
   width: 48px;
   height: 48px;
-  margin-right: 10px;
+  border: none;
+  padding: 0;
+  margin: 0 10px 0 0;
 }
 .w-buff .w-buff-content {
   font-weight: normal;
@@ -1587,7 +1470,9 @@
 .w-skill .w-skill-icon {
   width: 48px;
   height: 48px;
-  margin-right: 10px;
+  border: none;
+  padding: 0;
+  margin: 0 10px 0 0;
 }
 .w-skill .w-skill-content {
   font-weight: normal;
@@ -1697,10 +1582,12 @@
   padding: 9px 10px 10px;
   background-color: rgba(15, 34, 34, 0.88);
   color: #ffffff;
-  text-shadow: 1px 1px 1px #0f2222;
+}
+.c-item .c-item-wrapper * {
   font-weight: normal;
   font-size: 13.6px;
   line-height: 1.5em;
+  text-shadow: 1px 1px 1px #0f2222;
 }
 .c-item .c-item-wrapper:before {
   content: "";
@@ -1811,22 +1698,18 @@
 }
 .w-npc .w-npc-wrapper {
   min-width: 200px;
-  padding: 9px 10px 10px;
   background-color: rgba(15, 34, 34, 0.88);
   box-sizing: border-box;
   display: flex;
 }
-.w-npc .w-npc-wrapper div {
-  margin: 2px 0;
-}
 .w-npc .w-npc-wrapper .w-npc-content {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
-  padding: 10px;
   border-radius: 4px;
   *zoom: 1;
   font-size: 13px;
   color: #e7e7e7;
+  margin: 0;
+  padding: 5px 15px 10px 15px;
 }
 .w-npc .w-npc-wrapper .w-npc-content:after {
   content: "";
@@ -1856,8 +1739,8 @@
 }
 .w-npc .w-npc-wrapper .u-id {
   position: absolute;
-  right: 22px;
-  top: 28px;
+  right: 15px;
+  top: 10px;
   cursor: pointer;
   color: #5df9eb;
 }
