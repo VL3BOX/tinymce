@@ -1,12 +1,11 @@
 {
     "name": "@jx3box/tinymce",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "基于tinymce 5.2.2扩展JX3BOX专用",
     "main": "tinymce.js",
-    "dependencies": {},
     "devDependencies": {
-        "@jx3box/jx3box-common": "^6.7.8",
-        "@jx3box/jx3box-editor": "^1.1.6",
+        "@jx3box/jx3box-common": "^7.6.2",
+        "@jx3box/jx3box-editor": "^1.6.8",
         "csslab": "^4.0.3",
         "less": "^3.11.1"
     },
