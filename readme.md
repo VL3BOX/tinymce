@@ -2,8 +2,8 @@
 
 ## 引用
 ```html
-<script src="https://cdn.jsdelivr.net/gh/JX3BOX/tinymce@0.1.2/tinymce.min.js"></script>
-<script src="https://console.cnyixun.com/static/tinymce/tinymce.min.js?v=xx"></script>
+<script src="https://oss.jx3box.com/static/tinymce/tinymce.min.js"></script>
+<script src="https://oss.jx3box.com/static/tinymce/skins/content/default/content.min.css"></script>
 ```
 
 ## 构建
