@@ -294,7 +294,7 @@
   vertical-align: -3px;
 }
 .c-article-tinymce p,
-.c-article-tinymce div {
+.c-article-tinymce div:not([class]) {
   margin: 0;
   line-height: 2.2;
 }
@@ -478,7 +478,6 @@
 .c-article-tinymce .e-details,
 .c-article-tinymce .e-summary {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  white-space: pre-wrap;
   margin: 0;
 }
 .c-article-tinymce .e-summary {
@@ -528,6 +527,7 @@
   background: none;
   border-top: none;
   display: none;
+  line-height: 2.2;
 }
 .c-article-editor .e-summary {
   cursor: text;
@@ -1235,31 +1235,35 @@
 .c-article-editor .e-pz-iframe {
   display: block;
 }
-.w-skill-combo {
+.c-article-tinymce:not(.c-article-editor) .w-skill-combo {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.w-skill-combo-item {
+.c-article-tinymce:not(.c-article-editor) .w-skill-combo-item {
+  list-style: none;
   position: relative;
   *zoom: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.w-skill-combo-item:not(:last-of-type)::after {
+.c-article-tinymce:not(.c-article-editor) .w-skill-combo-item:not(:last-of-type)::after {
   content: "▲";
   position: absolute;
   right: -20px;
   top: 5px;
   transform: rotate(90deg);
 }
-.w-skill-combo-item img {
+.c-article-tinymce:not(.c-article-editor) .w-skill-combo-item img {
   border: none;
   padding: 0;
   margin: 0;
 }
-.w-skill-combo-item .u-gcd-icon {
+.c-article-tinymce:not(.c-article-editor) .w-skill-combo-item .u-gcd-icon {
   position: absolute;
   left: -4px;
   top: -4px;
@@ -1268,13 +1272,17 @@
   height: 12px;
   border-radius: 50%;
   display: block;
+  display: none;
 }
-.w-skill-combo-item .u-gcd-icon i {
+.c-article-tinymce:not(.c-article-editor) .w-skill-combo-item .u-gcd-icon.is-show {
+  display: inline-block;
+}
+.c-article-tinymce:not(.c-article-editor) .w-skill-combo-item .u-gcd-icon i {
   color: #fff;
   font-size: 12px;
   display: block;
 }
-.w-skill-combo-item .u-skill-name {
+.c-article-tinymce:not(.c-article-editor) .w-skill-combo-item .u-skill-name {
   font-size: 13px;
   line-height: 1.5;
   width: 56px;
@@ -1283,20 +1291,20 @@
   white-space: pre-wrap;
   text-align: center;
 }
-.e-skill-combo {
+.c-article-editor .e-skill-combo {
   font-size: 14px;
   width: 100%;
   box-sizing: border-box;
   background-color: #f1f8ff;
   border: 1px solid #c8e1ff;
   color: #62a9ff;
-  padding: 10px;
+  padding: 10px 10px 10px 30px;
   font-family: Monaco, Consolas, "Lucida Console", "Courier New", serif;
   position: relative;
   *zoom: 1;
   border-radius: 3px;
 }
-.e-skill-combo:after {
+.c-article-editor .e-skill-combo:after {
   content: "JX3BOX·连招套路";
   position: absolute;
   right: 8px;
