@@ -1,35 +1,59 @@
-name: Github Pages
+name: Build and deploy to GitHub pages
 on:
-  push:
-    branches:
-      - master
+    push:
+        branches:
+            - i18n
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
+    build:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+            packages: write
+            deployments: write
+        steps:
+            - uses: actions/checkout@v4
 
-      # - name: Install && Build
-      #   run: |
-      #     npm install
-      #     npm run build
+            - name: lowercase github.repository
+              run: |
+                  echo "GITHUB_REPO=`echo ${{github.repository}} | tr '[:upper:]' '[:lower:]'`" >>${GITHUB_ENV}
 
-      # - name: Github Pages
-      #   uses: JamesIves/github-pages-deploy-action@releases/v3
-      #   with:
-      #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #     BRANCH: gh-pages
-      #     FOLDER: dist
-      #     CLEAN: false
-      #     # CLEAN_EXCLUDE: '["css", "js"]'
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: "16.x"
+                  registry-url: "https://gitlab.com/api/v4/groups/${{ secrets.GL_GROUP_ID }}/-/packages/npm/"
+                  scope: "@jx3box"
+            - run: |
+                  rm -f package-lock.json yarn.lock
+                  npm install && npm run build
+              env:
+                  NODE_AUTH_TOKEN: ""
 
-      - name: OSS
-        uses: manyuanrong/setup-ossutil@v2.0
-        with:
-          endpoint: "oss-cn-hangzhou.aliyuncs.com"
-          access-key-id: ${{secrets.AccessKey_ID}}
-          access-key-secret: ${{secrets.Access_Key_Secret}}
-      - run: ossutil cp -rf . oss://jx3box/static/tinymce
+            # - name: Publish to Cloudflare Pages
+            #   uses: cloudflare/pages-action@v1
+            #   with:
+            #     apiToken: ${{ secrets.CF_API_TOKEN }}
+            #     accountId: ${{ secrets.CF_ACCOUNT_ID }}
+            #     projectName: ${{ secrets.CF_PROJECT_NAME }}
+            #     directory: dist
+            #     gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+            #     branch: master
+            #     wranglerVersion: '3'
+
+            - name: Deploy 🚀
+              uses: JamesIves/github-pages-deploy-action@v4
+              with:
+                  branch: gh-pages
+                  repository-name: vl3box/vl3box
+                  folder: dist
+                  target-folder: static/${{ github.event.repository.name }}
+                  token: ${{ secrets.GH_REPO_TOKEN }}
+                  clean: true
+                  clean-exclude: |
+                      **/*.map
+
+            # - name: Upload to Cloudflare R2
+            #   uses: AnimMouse/setup-rclone@v1
+            #   with:
+            #     rclone_config: ${{ secrets.CF_RCLONE_CONFIG }}
+
+            # - run: rclone sync dist/ r2:/vl3box/static/index/
