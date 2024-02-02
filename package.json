@@ -12,7 +12,8 @@
     },
     "scripts": {
         "update": "npm --registry https://registry.npmjs.org install @jx3box/jx3box-common@latest @jx3box/jx3box-editor@latest",
-        "build": "npx lessc ./skins/content/default/content.less ./skins/content/default/content.min.css",
+        "build": "npx lessc ./skins/content/default/content.less ./skins/content/default/content.min.css && npm run rsync",
+        "rsync": "mkdir -p dist/ ; rsync -av --progress  --exclude='node_modules' --include='*/' --include='**/*.js'  --include='**/*.css' --include='**/*.woff' --exclude='*'  * dist/ ",
         "serve": "serve",
         "dev": "serve"
     },
